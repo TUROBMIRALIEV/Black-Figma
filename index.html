@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: #1E1E1E;
+        }
+
+        .container {
+            width: 1140px;
+            margin: 0 auto;
+        }
+
+        .Hk {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+        .hk-link {
+
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            letter-spacing: 0.01em;
+
+            color: #FFFFFF;
+        }
+
+        .hk-button {
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+            letter-spacing: 0.01em;
+            color: #FFFFFF;
+            /* Inside auto layout */
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            background: #EE8313;
+            padding: 12px 24px;
+        }
+
+        .car-title {
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 64px;
+            /* or 123% */
+
+            letter-spacing: 0.006em;
+
+            color: #FFFFFF;
+            width: 550px;
+        }
+
+        .c-text {
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 28px;
+            /* or 165% */
+
+            letter-spacing: -0.408px;
+
+            color: #FFFFFF;
+
+            opacity: 0.8;
+            width: 390px;
+            margin-top: 32px;
+        }
+
+        .deal-title {
+            font-family: 'Be Vietnam';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 52px;
+            /* identical to box height, or 130% */
+
+            letter-spacing: -0.0041em;
+
+            color: #FFFFFF;
+
+        }
+
+        .deal-text {
+
+            font-family: 'Be Vietnam';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            letter-spacing: 0.01em;
+
+            color: #FFFFFF;
+
+        }
+
+        .deal {
+            display: flex;
+            align-items: center;
+        }
+
+        .two-link {
+
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            letter-spacing: 0.01em;
+
+            color: #FFFFFF;
+
+
+            /* Inside auto layout */
+
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+            background: #EE8313;
+            padding: 12px 24px;
+            margin-right: 60px;
+        }
+
+        .tw-link {
+            padding: auto;
+            border: 2px solid #EE8313;
+        }
+
+        .pop-link {
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height, or 150% */
+
+            letter-spacing: 0.01em;
+
+            color: #EE8313;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .c-title {
+            font-family: 'Be Vietnam Pro';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 64px;
+            /* identical to box height, or 123% */
+
+            text-align: center;
+            letter-spacing: 0.006em;
+
+            color: #FFFFFF;
+            margin-bottom: 40px;
+        }
+        .cart-title{
+            font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.006em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 25px;
+margin-bottom: 16px;
+        }
+        .carts{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .cart-text{
+            
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+letter-spacing: 0.006em;
+
+color: #FFFFFF;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+width: 320px;
+        }
+        .cart-tex{
+            font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+
+letter-spacing: 0.006em;
+
+color: #FFFFFF;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+width: 360px;
+        }
+        .card-paris{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .paris{
+            
+background: #131313;
+border: 1px solid #171717;
+        }
+        .h1 {
+            font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+letter-spacing: 0.006em;
+
+color: #FFFFFF;
+padding-left: 25px;
+padding-right: 25px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin-top: 25px;
+        }
+        .paris-text{
+            font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+
+letter-spacing: 0.0041em;
+
+color: #FFFFFF;
+
+opacity: 0.8;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-top: 10px;
+margin-bottom: 25px;
+padding-left: 25px;
+padding-right: 25px;
+        }
+        .va-title{
+            
+font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+
+letter-spacing: 0.0041em;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-left: 10px;
+        }
+        .cars-an{
+            padding-left: 25px;
+padding-right: 25px;
+
+        }
+        .sas-link{
+            font-family: 'Be Vietnam Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+/* identical to box height, or 175% */
+
+letter-spacing: 0.0041em;
+
+color: #EE8313;
+padding-left: 25px;
+padding-right: 20px;
+margin-top: 17px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+        }
+        .asas{
+            width: 604px;
+        }
+        .two-link:hover{
+            background-color:#EE8313 ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="Hk">
+            <img src="./Group 1.png" alt="">
+            <div class="links">
+                <a href="#" class="hk-link">Home</a>
+                <a href="#" class="hk-link ml-12">Cars</a>
+                <a href="#" class="hk-link ml-12">Book now</a>
+                <a href="#" class="hk-link ml-12">Terms and Conditions</a>
+                <a href="#" class="hk-button ml-16">Manage Booking</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="best flex mt-28">
+            <div class="car">
+                <h1 class="car-title">
+                    The World's Best Luxury Car Deals
+                </h1>
+                <p class="c-text">
+                    HKinvestor can provide rentals of the most exclusive cars like Ferrari and Lamborghini.
+                </p>
+                <div class="two-links flex  mt-12 mb-10">
+                    <a href="#" class="two-link">Buy Now</a>
+                    <a href="#" class="two-link" style="background-color: #1E1E1E; border: 1px solid #EE8313;  :hover{
+                        background-color: #EE8313;
+                    }" >Video
+                        Introduction </a>
+
+                </div>
+                <div class="deals flex">
+                    <div class="deal flex">
+                        <h1 class="deal-title">
+                            500+
+                        </h1>
+                        <p class="deal-text ml-4">
+                            Luxury Cars
+                        </p>
+                    </div>
+                    <div class="deal flex ml-10">
+                        <h1 class="deal-title">
+                            #1
+                        </h1>
+                        <p class="deal-text ml-4">
+                            Best Deal Car
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="yel-car">
+                <img src="./kisspng-2018-ford-mustang-coupe-2018-ford-mustang-gt-premi-third-generation-ford-mustang-5b1dd219884808.png"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="c-title text-center">
+            Rent a Luxury Car
+        </h1>
+        <div class="cards flex">
+            <div class="card">
+                <img src="./Group 1788.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./Group 1789.png" alt="">
+            </div>
+        </div>
+
+        <div class="cards flex mt-10">
+            <div class="card">
+                <img src="./Group 1786.png" alt="">
+            </div>
+            <div class="card">
+                <img src="./Group 1787.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="service-title " style="font-family: 'Be Vietnam Pro';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 52px;
+   line-height: 64px;
+   /* identical to box height, or 123% */
+   
+   letter-spacing: 0.006em;
+   
+   color: #FFFFFF;
+   margin-top: 120px;   
+   margin-bottom: 70px;
+   margin-left: 100px;
+   ">
+            Our Other Services
+        </h1>
+        <div class="carts flex">
+            <div class="cart">
+                <img src="./Mask (1).png" alt="" >
+                <h1 class="cart-title">
+                    Private Charter
+                </h1>
+                <p class="cart-text">
+                    Pinjam Mobil Rent also offers you discreet and speedy, transfers via helicopter or private planes.  
+                </p>
+              </div>
+      <div class="cart">
+        <img src="./Mask (1).png" alt="" >
+        <h1 class="cart-title">
+            Chauffer Driven Car Rentals
+        </h1>
+        <p class="cart-text">
+            Our chauffers are professional drivers who provide a discreet, reliable punctual and professional service.
+        </p>
+      </div>
+      <div class="cart">
+        <img src="./Mask (2).png" alt="" >
+        <h1 class="cart-title">
+            Wedding Car Rentals
+        </h1>
+        <p class="cart-text">
+            If you want to celebrate your wedding in style and elegance, choose one car from our luxury collection.
+        </p>
+      </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="pop-title text-center" style="
+        font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 64px;
+        /* or 123% */
+        
+        text-align: center;
+        letter-spacing: 0.006em;
+        
+        color: #FFFFFF;
+        width: 500px;
+        margin-bottom: 40px;
+        margin: 0 auto;
+        margin-top: 120px;">
+            Popular Destination for Car Rentals
+        </h1>
+        <div class="card-paris flex mt-9">
+            <div class="paris">
+                <img src="./Mask.png" alt="">
+                <div class="h1 paris">
+                    London
+                </div>
+                <p class="paris-text">
+                    Car hire in 75 pick-up locations
+                </p>
+                <div class="cars-an flex">
+                    <img src="./Group 2.png" alt="">
+                    <h1 class="va-title">
+                        From $ 669,00 per day
+                    </h1>
+                    
+                </div>
+                <a href="#" class="sas-link">Search rental cars in London</a>
+            </div>
+            <div class="paris">
+                <img src="./Mask.png" alt="">
+                <div class="h1 paris">
+                    London
+                </div>
+                <p class="paris-text">
+                    Car hire in 75 pick-up locations
+                </p>
+                <div class="cars-an flex">
+                    <img src="./Group 2.png" alt="">
+                    <h1 class="va-title">
+                        From $ 669,00 per day
+                    </h1>
+                    
+                </div>
+                <a href="#" class="sas-link">Search rental cars in London</a>
+            </div>
+            <div class="paris">
+                <img src="./Mask.png" alt="">
+                <div class="h1 paris">
+                    London
+                </div>
+                <p class="paris-text">
+                    Car hire in 75 pick-up locations
+                </p>
+                <div class="cars-an flex">
+                    <img src="./Group 2.png" alt="">
+                    <h1 class="va-title">
+                        From $ 669,00 per day
+                    </h1>
+                    
+                </div>
+                <a href="#" class="sas-link">Search rental cars in London</a>
+            </div>
+        </div>
+        <div class="card-paris flex mt-6 mb-36">
+            <div class="paris">
+                <img src="./Mask.png" alt="">
+                <div class="h1 paris">
+                    London
+                </div>
+                <p class="paris-text">
+                    Car hire in 75 pick-up locations
+                </p>
+                <div class="cars-an flex">
+                    <img src="./Group 2.png" alt="">
+                    <h1 class="va-title">
+                        From $ 669,00 per day
+                    </h1>
+                    
+                </div>
+                <a href="#" class="sas-link">Search rental cars in London</a>
+            </div>
+            <div class="paris">
+                <img src="./Mask.png" alt="">
+                <div class="h1 paris">
+                    London
+                </div>
+                <p class="paris-text">
+                    Car hire in 75 pick-up locations
+                </p>
+                <div class="cars-an flex">
+                    <img src="./Group 2.png" alt="">
+                    <h1 class="va-title">
+                        From $ 669,00 per day
+                    </h1>
+                    
+                </div>
+                <a href="#" class="sas-link">Search rental cars in London</a>
+            </div>
+            <div class="paris">
+                <img src="./Mask.png" alt="">
+                <div class="h1 paris">
+                    London
+                </div>
+                <p class="paris-text">
+                    Car hire in 75 pick-up locations
+                </p>
+                <div class="cars-an flex">
+                    <img src="./Group 2.png" alt="">
+                    <h1 class="va-title">
+                        From $ 669,00 per day
+                    </h1>
+                    
+                </div>
+                <a href="#" class="sas-link">Search rental cars in London</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="con-title text-center" style="font-family: 'Be Vietnam Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 64px;
+        /* identical to box height, or 123% */
+        
+        text-align: center;
+        letter-spacing: 0.006em;
+        
+        color: #FFFFFF;
+        margin: 0 auto;
+        margin-top: 160xp;">
+            Location
+        </h1>
+        <img src="./Mask (3).png" alt="" class="cs " style="margin: 0 auto;
+        width: 1200px;
+        margin-top: 40px; margin-bottom: 102px;">
+    </div>
+    <!-- <div class="container">
+        <img src="./Footer.png" alt="" style="margin: 0 auto;">
+    </div> -->
+</body>
+</html>
